@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "IranYekan";
+    src: url("IRANYekan.woff2") format("woff2"),
+         url("IRANYekan.woff") format("woff");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "IranYekan", sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin: 30px auto;
+    box-sizing: border;
+}
+
+.wedding-video {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.location-btn {
+    display: block;
+    background: #f7e4c0;
+    color: #494949;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.insta-footer {
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: 'IRANYekan', sans-serif;
+}
+
+.insta-footer a {
+  text-decoration: none;
+  color: #494949;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width:480px){
+
+    .container{
+        width:calc(100% - 20px);
+        padding:15px;
+    }
+
+    .timer-grid{
+        gap:8px;
+    }
+
+    .time-number{
+        font-size:22px;
+    }
+
+    .time-label{
+        font-size:12px;
+    }
+
+    .timer-title,
+    .rsvp-title{
+        font-size:18px;
+    }
+
+    .location-btn,
+    .yes-btn,
+    .no-btn{
+        font-size:15px;
+    }
+}
